@@ -1,0 +1,48 @@
+.encabezado-padre{
+    display: flex;
+     align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    justify-content: space-between;
+}
+.grupo-derecha {
+  display: flex;
+  align-items: center; 
+}
+
+
+.enlace_encabezado{
+    text-decoration: none;
+    color: black;
+    padding: 0 5px;
+}
+
+.itemtres{
+padding: 8px 16px;
+background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.itemimg{
+     width:20px;
+}
+
+.imagenprincipal{
+    margin: 0 76px;
+}
+
+.bienvenidafondo{
+background-image: url("/styles/img/1raImagen.png");
+
+}
+
+
+section{
+    text-decoration: none;
+}
+figure{
+    margin: 0;
+}
