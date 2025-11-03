@@ -1,26 +1,30 @@
 .encabezado-padre{
     display: flex;
-     align-items: center;
+    align-items: center;
     border-bottom: 1px solid #ccc;
     padding: 10px 0;
     justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+    
 }
 .grupo-derecha {
   display: flex;
   align-items: center; 
+  gap: 16px;
 }
 
 
 .enlace_encabezado{
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
     padding: 0 5px;
 }
 
 .itemtres{
 padding: 8px 16px;
-background-color: black;
-  color: white;
+background-color: #F5F2F0;
+  color: rgb(0, 0, 0);
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -30,19 +34,117 @@ background-color: black;
      width:20px;
 }
 
-.imagenprincipal{
-    margin: 0 76px;
+.imagenprincipal {
+  max-width: 960px;
+  margin: 0 auto;   
 }
 
-.bienvenidafondo{
-background-image: url("/styles/img/1raImagen.png");
-
+.bienvenidafondo {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), 
+  rgba(0, 0, 0, 0.4)),
+  url("/styles/img/1raImagen.png");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  
+  height: 512px; 
+  border-radius: 8px;
+  
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  
+  padding: 16px; 
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
 }
 
+.bienvenidafondo h2 {
+  font-size: 3.5rem;
+  margin-bottom: 8px;
+}
+
+.bienvenidafondo p {
+  font-size: 1.1rem;
+  max-width: 500px;
+}
 
 section{
     text-decoration: none;
 }
 figure{
     margin: 0;
+}
+
+
+.menudecomidas {
+  display: grid;
+  grid-template-columns: repeat(3, 249.33px);
+  
+  gap: 16px;
+  
+  justify-content: flex-start;
+}
+
+.menudecomidas h3 {
+  grid-column: 1 / -1; 
+  font-size: 2rem;
+  margin-bottom: 24px;
+}
+
+.menudecomidas article img {
+  width: 249.33px;
+  height: 249px;
+  object-fit: cover; 
+  border-radius: 8px;
+  display: block;
+}
+
+.menudecomidas h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+.menudecomidas p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0;
+}
+
+footer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+
+.piepagina {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.piepagina a {
+  color: black;
+  text-decoration: none; 
+  color: #555;
+
+}
+
+.iconos-sociales {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 24px;
+  color: #555;
 }
